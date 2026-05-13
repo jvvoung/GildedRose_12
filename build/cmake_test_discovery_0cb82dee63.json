@@ -1,15 +1,20 @@
 {
-  "tests": 1,
+  "tests": 2,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "GildedRoseTest",
-      "tests": 1,
+      "tests": 2,
       "testsuite": [
         {
-          "name": "Foo",
+          "name": "TDD1_noname",
           "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
-          "line": 4
+          "line": 5
+        },
+        {
+          "name": "TDD2_noname",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 17
         }
       ]
     }

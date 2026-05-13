@@ -1,0 +1,4 @@
+GildedRoseTest.Foo 0 0
+GildedRoseTest.TDD_1 2 0.0335477
+GildedRoseTest.TDD_2 2 0.0374971
+---
