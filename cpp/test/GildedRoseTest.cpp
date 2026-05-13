@@ -42,3 +42,23 @@ TEST(GildedRoseTest, TDD4_sulfuras) {
   EXPECT_EQ(-1, app.items[0].sellIn);
   EXPECT_EQ(5, app.items[0].quality);
 }
+
+// TDD5
+TEST(GildedRoseTest, TDD5_aged_brie) {
+  std::vector<Item> items = {Item("Aged Brie", 0, 0)};
+  GildedRose app(items);
+  app.updateQuality();
+  EXPECT_EQ("Aged Brie", app.items[0].name);
+  EXPECT_EQ(-1, app.items[0].sellIn);
+  EXPECT_EQ(2, app.items[0].quality);
+}
+
+// TDD6
+TEST(GildedRoseTest, TDD6_aged_brie) {
+  std::vector<Item> items = {Item("Aged Brie", 0, 50)};
+  GildedRose app(items);
+  app.updateQuality();
+  EXPECT_EQ("Aged Brie", app.items[0].name);
+  EXPECT_EQ(-1, app.items[0].sellIn);
+  EXPECT_EQ(50, app.items[0].quality);
+}

@@ -25,23 +25,25 @@
 	ProcessorClockFrequency="3192.000000"
 	>
 	<Testing>
-		<StartDateTime>May 13 16:48 [NON-UTF-8-BYTE-0xB4][NON-UTF-8-BYTE-0xEB][NON-UTF-8-BYTE-0xC7]ѹα[NON-UTF-8-BYTE-0xB9] ǥ[NON-UTF-8-BYTE-0xC1]ؽ[NON-UTF-8-BYTE-0xC3]</StartDateTime>
-		<StartTestTime>1778658523</StartTestTime>
+		<StartDateTime>May 13 16:55 [NON-UTF-8-BYTE-0xB4][NON-UTF-8-BYTE-0xEB][NON-UTF-8-BYTE-0xC7]ѹα[NON-UTF-8-BYTE-0xB9] ǥ[NON-UTF-8-BYTE-0xC1]ؽ[NON-UTF-8-BYTE-0xC3]</StartDateTime>
+		<StartTestTime>1778658930</StartTestTime>
 		<TestList>
 			<Test>./GildedRoseTest.TDD1_noname</Test>
 			<Test>./GildedRoseTest.TDD2_noname</Test>
 			<Test>./GildedRoseTest.TDD3_sulfuras</Test>
+			<Test>./GildedRoseTest.TDD5_aged_brie</Test>
 			<Test>./GildedRoseTest.TDD4_sulfuras</Test>
+			<Test>./GildedRoseTest.TDD6_aged_brie</Test>
 		</TestList>
 		<Test Status="passed">
 			<Name>GildedRoseTest.TDD1_noname</Name>
 			<Path>.</Path>
 			<FullName>./GildedRoseTest.TDD1_noname</FullName>
 			<FullCommandLine>C:\DEV\GildedRose_12\build\gilded_rose_test.exe "--gtest_filter=GildedRoseTest.TDD1_noname" "--gtest_also_run_disabled_tests"</FullCommandLine>
-			<StartTestTime>1778658523.737340</StartTestTime>
+			<StartTestTime>1778658930.376586</StartTestTime>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.060061</Value>
+					<Value>0.076312</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -65,10 +67,10 @@
 			<Path>.</Path>
 			<FullName>./GildedRoseTest.TDD2_noname</FullName>
 			<FullCommandLine>C:\DEV\GildedRose_12\build\gilded_rose_test.exe "--gtest_filter=GildedRoseTest.TDD2_noname" "--gtest_also_run_disabled_tests"</FullCommandLine>
-			<StartTestTime>1778658523.748421</StartTestTime>
+			<StartTestTime>1778658930.389118</StartTestTime>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.051143</Value>
+					<Value>0.065139</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -92,10 +94,10 @@
 			<Path>.</Path>
 			<FullName>./GildedRoseTest.TDD3_sulfuras</FullName>
 			<FullCommandLine>C:\DEV\GildedRose_12\build\gilded_rose_test.exe "--gtest_filter=GildedRoseTest.TDD3_sulfuras" "--gtest_also_run_disabled_tests"</FullCommandLine>
-			<StartTestTime>1778658523.766003</StartTestTime>
+			<StartTestTime>1778658930.402413</StartTestTime>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.035211</Value>
+					<Value>0.052700</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -115,14 +117,41 @@
 			</Results>
 		</Test>
 		<Test Status="passed">
+			<Name>GildedRoseTest.TDD5_aged_brie</Name>
+			<Path>.</Path>
+			<FullName>./GildedRoseTest.TDD5_aged_brie</FullName>
+			<FullCommandLine>C:\DEV\GildedRose_12\build\gilded_rose_test.exe "--gtest_filter=GildedRoseTest.TDD5_aged_brie" "--gtest_also_run_disabled_tests"</FullCommandLine>
+			<StartTestTime>1778658930.415117</StartTestTime>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.040888</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>C:\DEV\GildedRose_12\build\gilded_rose_test.exe "--gtest_filter=GildedRoseTest.TDD5_aged_brie" "--gtest_also_run_disabled_tests"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNkD1rwzAQhnf9ihvjwaIpdAlkKHXwUEiCk3axjJCtixHIUpDk9u/XskMaF0py03083L3vFb0xyrTQCWUWCZyc7eBtxbLNJ8uVligL65Evn1ndDyXjEs+etda2GgP6kHrX3JRsLGPG40LaNGRrA64gHxE4DhM4KR3QwRp+D8Q+PWbZCxctSl47haRcX6OC4iJzCWFcEWVect+rgJSU6TUqyLWthZ7maL6Us6ZDM7AY0v78B77dOZdESig+tjBGdU/uhMHu/R4KiyfofPKoiAmHYIPQCXnMZ0DhUmm/zfyL/30PnDB0fmews389HDZZdD6xlPwAd0ezrQ==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
 			<Name>GildedRoseTest.TDD4_sulfuras</Name>
 			<Path>.</Path>
 			<FullName>./GildedRoseTest.TDD4_sulfuras</FullName>
 			<FullCommandLine>C:\DEV\GildedRose_12\build\gilded_rose_test.exe "--gtest_filter=GildedRoseTest.TDD4_sulfuras" "--gtest_also_run_disabled_tests"</FullCommandLine>
-			<StartTestTime>1778658523.780129</StartTestTime>
+			<StartTestTime>1778658930.428806</StartTestTime>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.030593</Value>
+					<Value>0.028165</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -141,8 +170,35 @@
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>May 13 16:48 [NON-UTF-8-BYTE-0xB4][NON-UTF-8-BYTE-0xEB][NON-UTF-8-BYTE-0xC7]ѹα[NON-UTF-8-BYTE-0xB9] ǥ[NON-UTF-8-BYTE-0xC1]ؽ[NON-UTF-8-BYTE-0xC3]</EndDateTime>
-		<EndTestTime>1778658523</EndTestTime>
+		<Test Status="passed">
+			<Name>GildedRoseTest.TDD6_aged_brie</Name>
+			<Path>.</Path>
+			<FullName>./GildedRoseTest.TDD6_aged_brie</FullName>
+			<FullCommandLine>C:\DEV\GildedRose_12\build\gilded_rose_test.exe "--gtest_filter=GildedRoseTest.TDD6_aged_brie" "--gtest_also_run_disabled_tests"</FullCommandLine>
+			<StartTestTime>1778658930.441104</StartTestTime>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.022505</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>C:\DEV\GildedRose_12\build\gilded_rose_test.exe "--gtest_filter=GildedRoseTest.TDD6_aged_brie" "--gtest_also_run_disabled_tests"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNkD1rwzAQhnf9ihvjwaLp0CGQodTBQyEJTtrFMkK2LkYgS0GS279fyw5pXCjJTffxcPe+V/TGKNNCJ5RZJHBytoO3Fcs2nyxXWqIsrEe+fGZ1P5SMSzx71lrbagzoQ+pdc1OysYwZjwtp05CtDbiCfETgOEzgpHRAB2v4PRD79JhlL1y0KHntFJJyfY0KiovMJYRxRZR5yX2vAlJSpteoINe2Fnqao/lSzpoOzcBiSPvzH/h251wSKaH42MIY1T25Ewa793soLJ6g88mjIiYcgg1CJ+QxnwGFS6X9NvMv/vc9cMLQ+Z3Bzv71cNhk0fnEUvIDepuzsA==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>May 13 16:55 [NON-UTF-8-BYTE-0xB4][NON-UTF-8-BYTE-0xEB][NON-UTF-8-BYTE-0xC7]ѹα[NON-UTF-8-BYTE-0xB9] ǥ[NON-UTF-8-BYTE-0xC1]ؽ[NON-UTF-8-BYTE-0xC3]</EndDateTime>
+		<EndTestTime>1778658930</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

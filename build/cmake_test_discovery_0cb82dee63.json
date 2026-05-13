@@ -1,10 +1,10 @@
 {
-  "tests": 4,
+  "tests": 6,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "GildedRoseTest",
-      "tests": 4,
+      "tests": 6,
       "testsuite": [
         {
           "name": "TDD1_noname",
@@ -25,6 +25,16 @@
           "name": "TDD4_sulfuras",
           "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
           "line": 37
+        },
+        {
+          "name": "TDD5_aged_brie",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 47
+        },
+        {
+          "name": "TDD6_aged_brie",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 57
         }
       ]
     }
