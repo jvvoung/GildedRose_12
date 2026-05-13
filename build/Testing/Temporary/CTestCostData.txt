@@ -1,4 +1,8 @@
 GildedRoseTest.Foo 0 0
 GildedRoseTest.TDD_1 2 0.0335477
 GildedRoseTest.TDD_2 2 0.0374971
+GildedRoseTest.TDD1_noname 10 0.0634448
+GildedRoseTest.TDD2_noname 10 0.0502329
+GildedRoseTest.TDD3_sulfuras 10 0.034678
+GildedRoseTest.TDD4_sulfuras 10 0.0283743
 ---

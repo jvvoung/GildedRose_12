@@ -1,10 +1,10 @@
 {
-  "tests": 2,
+  "tests": 4,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "GildedRoseTest",
-      "tests": 2,
+      "tests": 4,
       "testsuite": [
         {
           "name": "TDD1_noname",
@@ -15,6 +15,16 @@
           "name": "TDD2_noname",
           "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
           "line": 17
+        },
+        {
+          "name": "TDD3_sulfuras",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 27
+        },
+        {
+          "name": "TDD4_sulfuras",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 37
         }
       ]
     }

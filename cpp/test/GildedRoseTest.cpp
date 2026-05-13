@@ -22,3 +22,23 @@ TEST(GildedRoseTest, TDD2_noname) {
   EXPECT_EQ(-1, app.items[0].sellIn);
   EXPECT_EQ(3, app.items[0].quality);
 }
+
+// TDD3
+TEST(GildedRoseTest, TDD3_sulfuras) {
+  std::vector<Item> items = {Item("Sulfuras, Hand of Ragnaros", 0, 5)};
+  GildedRose app(items);
+  app.updateQuality();
+  EXPECT_EQ("Sulfuras, Hand of Ragnaros", app.items[0].name);
+  EXPECT_EQ(0, app.items[0].sellIn);
+  EXPECT_EQ(5, app.items[0].quality);
+}
+
+// TDD4
+TEST(GildedRoseTest, TDD4_sulfuras) {
+  std::vector<Item> items = {Item("Sulfuras, Hand of Ragnaros", -1, 5)};
+  GildedRose app(items);
+  app.updateQuality();
+  EXPECT_EQ("Sulfuras, Hand of Ragnaros", app.items[0].name);
+  EXPECT_EQ(-1, app.items[0].sellIn);
+  EXPECT_EQ(5, app.items[0].quality);
+}
