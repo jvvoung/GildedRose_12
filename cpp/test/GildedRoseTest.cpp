@@ -62,3 +62,44 @@ TEST(GildedRoseTest, TDD6_aged_brie) {
   EXPECT_EQ(-1, app.items[0].sellIn);
   EXPECT_EQ(50, app.items[0].quality);
 }
+
+// TDD7
+TEST(GildedRoseTest, TDD7_backstage) {
+  std::vector<Item> items = {
+      Item("Backstage passes to a TAFKAL80ETC concert", 15, 0)};
+  GildedRose app(items);
+  app.updateQuality();
+  EXPECT_EQ("Backstage passes to a TAFKAL80ETC concert", app.items[0].name);
+  EXPECT_EQ(14, app.items[0].sellIn);
+  EXPECT_EQ(1, app.items[0].quality);
+}
+
+// TDD8
+TEST(GildedRoseTest, TDD8_backstage) {
+  std::vector<Item> items = {
+      Item("Backstage passes to a TAFKAL80ETC concert", 0, 0)};
+  GildedRose app(items);
+  app.updateQuality();
+  EXPECT_EQ("Backstage passes to a TAFKAL80ETC concert", app.items[0].name);
+  EXPECT_EQ(-1, app.items[0].sellIn);
+  EXPECT_EQ(0, app.items[0].quality);
+}
+
+// TDD9
+TEST(GildedRoseTest, TDD9_backstage) {
+  std::vector<Item> items = {
+      Item("Backstage passes to a TAFKAL80ETC concert", 0, 51)};
+  GildedRose app(items);
+  app.updateQuality();
+  EXPECT_EQ("Backstage passes to a TAFKAL80ETC concert", app.items[0].name);
+  EXPECT_EQ(-1, app.items[0].sellIn);
+  EXPECT_EQ(0, app.items[0].quality);
+}
+
+// TDD10
+TEST(GildedRoseTest, TDD10_empty_items) {
+  std::vector<Item> items = {};
+  GildedRose app(items);
+  app.updateQuality();
+  EXPECT_EQ(0, app.items.size());
+}

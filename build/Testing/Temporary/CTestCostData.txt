@@ -1,10 +1,14 @@
 GildedRoseTest.Foo 0 0
 GildedRoseTest.TDD_1 2 0.0335477
 GildedRoseTest.TDD_2 2 0.0374971
-GildedRoseTest.TDD1_noname 12 0.0654456
-GildedRoseTest.TDD2_noname 12 0.0529733
-GildedRoseTest.TDD3_sulfuras 12 0.0380113
-GildedRoseTest.TDD4_sulfuras 12 0.0298028
-GildedRoseTest.TDD5_aged_brie 2 0.03694
-GildedRoseTest.TDD6_aged_brie 2 0.0222776
+GildedRoseTest.TDD1_noname 16 0.0796259
+GildedRoseTest.TDD2_noname 16 0.0639201
+GildedRoseTest.TDD3_sulfuras 16 0.0479443
+GildedRoseTest.TDD4_sulfuras 16 0.0340853
+GildedRoseTest.TDD5_aged_brie 6 0.0778382
+GildedRoseTest.TDD6_aged_brie 6 0.0471645
+GildedRoseTest.TDD7_backstage 4 0.104633
+GildedRoseTest.TDD8_backstage 4 0.0774237
+GildedRoseTest.TDD9_backstage 4 0.042581
+GildedRoseTest.TDD10_empty_items 4 0.0250502
 ---
