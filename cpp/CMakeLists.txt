@@ -7,9 +7,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include(FetchContent)
 FetchContent_Declare(
     googletest
-    GIT_REPOSITORY https://github.com/google/googletest.git
-    GIT_TAG v1.14.0
+    URL https://github.com/google/googletest/archive/refs/tags/v1.16.0.zip
+    DOWNLOAD_EXTRACT_TIMESTAMP TRUE
+    TLS_VERIFY OFF
 )
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
 # Library
@@ -20,6 +22,11 @@ target_include_directories(gilded_rose PUBLIC include)
 enable_testing()
 add_executable(gilded_rose_test test/GildedRoseTest.cpp)
 target_link_libraries(gilded_rose_test gilded_rose GTest::gtest_main)
+
+if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+    target_compile_options(gilded_rose_test PRIVATE --coverage)
+    target_link_options(gilded_rose_test PRIVATE --coverage)
+endif()
 
 include(GoogleTest)
 gtest_discover_tests(gilded_rose_test)
