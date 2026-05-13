@@ -49,7 +49,6 @@ ctest --test-dir build
 ### unit test VS golden-master test 비교
 
 ### To-Do list
-### To-Do list
 
 - TDD1 = 일반 아이템 품질 하한
 - TDD2 = 기한 지난 일반 아이템 품질 감소
@@ -60,3 +59,4 @@ ctest --test-dir build
 - TDD7 = Backstage Pass 10일 초과 시 품질 +1 증가
 - TDD8 = Backstage Pass 공연 지난 후 품질 0
 - TDD9 = Backstage Pass 품질 50 초과 후 공연 종료 시 품질 0
+- TDD10 = 아이템이 없을 경우 처리
