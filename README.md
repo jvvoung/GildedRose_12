@@ -48,15 +48,17 @@ ctest --test-dir build
 
 ### unit test VS golden-master test 비교
 
-### To-Do list
+### TO-DO LIST (12 Steps)
 
-TDD1 : 일반 아이템 품질 하한  
-TDD2 : 기한 지난 일반 아이템 품질 감소  
-TDD3 : Sulfuras 전설 아이템 품질 불변  
-TDD4 : Sulfuras 기한 마감 후에도 품질 불변  
-TDD5 : 기한 지난 Aged Brie 품질 2 증가  
-TDD6 : Aged Brie 품질 상한 50 테스트  
-TDD7 : Backstage Pass 10일 초과 시 품질 1 증가  
-TDD8 : Backstage Pass 공연 지난 후 품질 0  
-TDD9 : Backstage Pass 품질 50 초과 후 공연 종료 시 품질 0  
-TDD10 : 아이템이 없을 경우 처리  
+1. **테스트 먼저** — Google Test로 회귀 테스트 작성 (일반·기한·하한/상한·특수 아이템·경계값 등).
+2. **코드 정리** — 매직 스트링 상수 추출, `items[i]` → `Item&` 변수 추출, 불필요 코드 제거.
+3. **조건 분리** — if 반전, else-if 병합, 조건 단순화(긍정 조건 우선).
+4. **메서드 추출** — 타입별 `updateQuality*()` 및 `updateSellIn()` 등으로 분리.
+5. **클래스 분리** — `AgedBrieItem`, `BackstagePassItem`, `SulfurasItem`, `NormalItem` 등 (`Item` 클래스는 수정하지 않음).
+6. **추상화** — `GildedRoseItem` 추상 기반 클래스 + 다형성, Factory로 생성.
+7. **기능 추가** — 새 아이템 카테고리(예: F&B, Conjured)는 새 클래스 + Factory 최소 변경으로 추가.
+8. **변수 선언 분리** — Split declaration으로 분기마다 중복 선언 정리.
+9. **중복 제거** — 루프 본문을 `createItem` → `updateQuality` → `updateSellIn` 패턴으로 통일.
+10. **Factory 메서드 추출** — `createItem` / `getItem` 등으로 객체 생성 책임 한곳에 모음.
+11. **메서드/구조 정리** — 필요 시 보조 메서드 추출로 가독성·응집도 보완.
+12. **Inline** — 불필요한 임시 변수 인라인 등으로 `updateQuality()` 본문을 짧게 마무리.
