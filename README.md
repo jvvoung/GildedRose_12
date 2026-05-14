@@ -34,14 +34,12 @@ cpp/
 ```
 
 ### 빌드 및 테스트 실행
-
 ```bash
 cd cpp
 cmake -B build
 cmake --build build
 ctest --test-dir build
 ```
-
 ### GildedRoseTest.cpp : failed test 수정
 - updateQuality() 의 test case를 추가 작성해 보세요.
 - unit test 내용 : 문서상에 나타난 동작들 확인
