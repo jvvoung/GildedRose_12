@@ -25,8 +25,8 @@
 	ProcessorClockFrequency="3192.000000"
 	>
 	<Testing>
-		<StartDateTime>May 14 16:43 [NON-UTF-8-BYTE-0xB4][NON-UTF-8-BYTE-0xEB][NON-UTF-8-BYTE-0xC7]ѹα[NON-UTF-8-BYTE-0xB9] ǥ[NON-UTF-8-BYTE-0xC1]ؽ[NON-UTF-8-BYTE-0xC3]</StartDateTime>
-		<StartTestTime>1778744587</StartTestTime>
+		<StartDateTime>May 15 09:26 [NON-UTF-8-BYTE-0xB4][NON-UTF-8-BYTE-0xEB][NON-UTF-8-BYTE-0xC7]ѹα[NON-UTF-8-BYTE-0xB9] ǥ[NON-UTF-8-BYTE-0xC1]ؽ[NON-UTF-8-BYTE-0xC3]</StartDateTime>
+		<StartTestTime>1778804782</StartTestTime>
 		<TestList>
 			<Test>./GildedRoseTest.TDD9_backstage</Test>
 		</TestList>
@@ -35,10 +35,10 @@
 			<Path>.</Path>
 			<FullName>./GildedRoseTest.TDD9_backstage</FullName>
 			<FullCommandLine>C:\DEV\GildedRose_12\build\gilded_rose_test.exe "--gtest_filter=GildedRoseTest.TDD9_backstage" "--gtest_also_run_disabled_tests"</FullCommandLine>
-			<StartTestTime>1778744587.250177</StartTestTime>
+			<StartTestTime>1778804782.649549</StartTestTime>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.020023</Value>
+					<Value>0.022479</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -57,8 +57,8 @@
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>May 14 16:43 [NON-UTF-8-BYTE-0xB4][NON-UTF-8-BYTE-0xEB][NON-UTF-8-BYTE-0xC7]ѹα[NON-UTF-8-BYTE-0xB9] ǥ[NON-UTF-8-BYTE-0xC1]ؽ[NON-UTF-8-BYTE-0xC3]</EndDateTime>
-		<EndTestTime>1778744587</EndTestTime>
+		<EndDateTime>May 15 09:26 [NON-UTF-8-BYTE-0xB4][NON-UTF-8-BYTE-0xEB][NON-UTF-8-BYTE-0xC7]ѹα[NON-UTF-8-BYTE-0xB9] ǥ[NON-UTF-8-BYTE-0xC1]ؽ[NON-UTF-8-BYTE-0xC3]</EndDateTime>
+		<EndTestTime>1778804782</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
