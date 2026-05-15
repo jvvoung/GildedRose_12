@@ -1,0 +1,124 @@
+{
+  "tests": 20,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "ApprovalTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "PrintTextFixture",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\ApprovalTest.cpp",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "name": "FoodBeverageTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "DegradesTwiceAsNormal",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\FoodBeverageTest.cpp",
+          "line": 4
+        },
+        {
+          "name": "DegradesFourTimesAfterSellIn",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\FoodBeverageTest.cpp",
+          "line": 12
+        },
+        {
+          "name": "QualityNeverBelowZero",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\FoodBeverageTest.cpp",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "name": "GildedRoseTest",
+      "tests": 16,
+      "testsuite": [
+        {
+          "name": "TDD1_noname",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 5
+        },
+        {
+          "name": "TDD2_noname",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 17
+        },
+        {
+          "name": "TDD3_sulfuras",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 27
+        },
+        {
+          "name": "TDD4_sulfuras",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 37
+        },
+        {
+          "name": "TDD5_aged_brie",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 47
+        },
+        {
+          "name": "TDD6_aged_brie",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 57
+        },
+        {
+          "name": "TDD7_backstage",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 67
+        },
+        {
+          "name": "TDD8_backstage",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 78
+        },
+        {
+          "name": "TDD9_backstage",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 89
+        },
+        {
+          "name": "TDD10_empty_items",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 100
+        },
+        {
+          "name": "NormalItemDegradesByOneEachDay",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 111
+        },
+        {
+          "name": "QualityNeverNegative",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 119
+        },
+        {
+          "name": "AgedBrieIncreasesQualityBeforeSellIn",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 127
+        },
+        {
+          "name": "BackstagePass_SellIn11_IncreasesByOne",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 135
+        },
+        {
+          "name": "BackstagePass_SellIn10_IncreasesByTwo",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 144
+        },
+        {
+          "name": "BackstagePass_SellIn5_IncreasesByThree",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+          "line": 153
+        }
+      ]
+    }
+  ]
+}

@@ -34,18 +34,29 @@ cpp/
 ```
 
 ### 빌드 및 테스트 실행
-
 ```bash
 cd cpp
 cmake -B build
 cmake --build build
 ctest --test-dir build
 ```
-
 ### GildedRoseTest.cpp : failed test 수정
 - updateQuality() 의 test case를 추가 작성해 보세요.
 - unit test 내용 : 문서상에 나타난 동작들 확인
 
 ### unit test VS golden-master test 비교
 
-### To-Do list
+### TO-DO LIST (12 Steps)
+
+1. **테스트 먼저** — Google Test로 회귀 테스트 작성 (일반·기한·하한/상한·특수 아이템·경계값 등).
+2. **코드 정리** — 매직 스트링 상수 추출, `items[i]` → `Item&` 변수 추출, 불필요 코드 제거.
+3. **조건 분리** — if 반전, else-if 병합, 조건 단순화(긍정 조건 우선).
+4. **메서드 추출** — 타입별 `updateQuality*()` 및 `updateSellIn()` 등으로 분리.
+5. **클래스 분리** — `AgedBrieItem`, `BackstagePassItem`, `SulfurasItem`, `NormalItem` 등 (`Item` 클래스는 수정하지 않음).
+6. **추상화** — `GildedRoseItem` 추상 기반 클래스 + 다형성, Factory로 생성.
+7. **기능 추가** — 새 아이템 카테고리(예: F&B, Conjured)는 새 클래스 + Factory 최소 변경으로 추가.
+8. **변수 선언 분리** — Split declaration으로 분기마다 중복 선언 정리.
+9. **중복 제거** — 루프 본문을 `createItem` → `updateQuality` → `updateSellIn` 패턴으로 통일.
+10. **Factory 메서드 추출** — `createItem` / `getItem` 등으로 객체 생성 책임 한곳에 모음.
+11. **메서드/구조 정리** — 필요 시 보조 메서드 추출로 가독성·응집도 보완.
+12. **Inline** — 불필요한 임시 변수 인라인 등으로 `updateQuality()` 본문을 짧게 마무리.
