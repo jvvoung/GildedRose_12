@@ -47,10 +47,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\CMake\bin\cmake.exe"
+CMAKE_COMMAND = C:\mingw64\bin\cmake.exe
 
 # The command to remove a file.
-RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
+RM = C:\mingw64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\DEV\GildedRose_12\build
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
-	"C:\Program Files\CMake\bin\ctest.exe" $(ARGS)
+	C:\mingw64\bin\ctest.exe $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -76,8 +76,8 @@ test/fast: test
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	"C:\Program Files\CMake\bin\cmake-gui.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
+	C:\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -87,7 +87,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\mingw64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -96,7 +96,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"gmock\" \"gtest\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"gmock\" \"gtest\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -106,37 +106,37 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	"C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake
+	C:\mingw64\bin\cmake.exe -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	"C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake
+	C:\mingw64\bin\cmake.exe -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	C:\mingw64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	C:\mingw64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	C:\mingw64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	C:\mingw64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
@@ -248,6 +248,19 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+#=============================================================================
+# Target rules for targets named ApprovalTests
+
+# Build rule for target.
+ApprovalTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ApprovalTests
+.PHONY : ApprovalTests
+
+# fast build rule for target.
+ApprovalTests/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\approvaltests-build\ApprovalTests\CMakeFiles\ApprovalTests.dir\build.make _deps/approvaltests-build/ApprovalTests/CMakeFiles/ApprovalTests.dir/build
+.PHONY : ApprovalTests/fast
+
 src/GildedRose.obj: src/GildedRose.cpp.obj
 .PHONY : src/GildedRose.obj
 
@@ -271,6 +284,30 @@ src/GildedRose.s: src/GildedRose.cpp.s
 src/GildedRose.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gilded_rose.dir\build.make CMakeFiles/gilded_rose.dir/src/GildedRose.cpp.s
 .PHONY : src/GildedRose.cpp.s
+
+test/ApprovalTest.obj: test/ApprovalTest.cpp.obj
+.PHONY : test/ApprovalTest.obj
+
+# target to build an object file
+test/ApprovalTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gilded_rose_test.dir\build.make CMakeFiles/gilded_rose_test.dir/test/ApprovalTest.cpp.obj
+.PHONY : test/ApprovalTest.cpp.obj
+
+test/ApprovalTest.i: test/ApprovalTest.cpp.i
+.PHONY : test/ApprovalTest.i
+
+# target to preprocess a source file
+test/ApprovalTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gilded_rose_test.dir\build.make CMakeFiles/gilded_rose_test.dir/test/ApprovalTest.cpp.i
+.PHONY : test/ApprovalTest.cpp.i
+
+test/ApprovalTest.s: test/ApprovalTest.cpp.s
+.PHONY : test/ApprovalTest.s
+
+# target to generate assembly for a file
+test/ApprovalTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gilded_rose_test.dir\build.make CMakeFiles/gilded_rose_test.dir/test/ApprovalTest.cpp.s
+.PHONY : test/ApprovalTest.cpp.s
 
 test/GildedRoseTest.obj: test/GildedRoseTest.cpp.obj
 .PHONY : test/GildedRoseTest.obj
@@ -309,6 +346,7 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... test
+	@echo ... ApprovalTests
 	@echo ... gilded_rose
 	@echo ... gilded_rose_test
 	@echo ... gmock
@@ -318,6 +356,9 @@ help:
 	@echo ... src/GildedRose.obj
 	@echo ... src/GildedRose.i
 	@echo ... src/GildedRose.s
+	@echo ... test/ApprovalTest.obj
+	@echo ... test/ApprovalTest.i
+	@echo ... test/ApprovalTest.s
 	@echo ... test/GildedRoseTest.obj
 	@echo ... test/GildedRoseTest.i
 	@echo ... test/GildedRoseTest.s

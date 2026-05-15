@@ -1,20 +1,3 @@
-GildedRoseTest.Foo 0 0
-GildedRoseTest.TDD_1 2 0.0335477
-GildedRoseTest.TDD_2 2 0.0374971
-GildedRoseTest.TDD1_noname 25 0.00205917
-GildedRoseTest.TDD2_noname 25 0.00201059
-GildedRoseTest.TDD3_sulfuras 25 0.00209696
-GildedRoseTest.TDD4_sulfuras 25 0.00189072
-GildedRoseTest.TDD5_aged_brie 15 0.00311619
-GildedRoseTest.TDD6_aged_brie 15 0.00325707
-GildedRoseTest.TDD7_backstage 13 0.0040005
-GildedRoseTest.TDD8_backstage 14 0.00340585
-GildedRoseTest.TDD9_backstage 13 0.00399076
-GildedRoseTest.TDD10_empty_items 13 0.00392779
-GildedRoseTest.NormalItemDegradesByOneEachDay 10 0.00513549
-GildedRoseTest.QualityNeverNegative 9 0.0055973
-GildedRoseTest.AgedBrieIncreasesQualityBeforeSellIn 9 0.0282248
-GildedRoseTest.BackstagePass_SellIn11_IncreasesByOne 9 0.00534175
-GildedRoseTest.BackstagePass_SellIn10_IncreasesByTwo 9 0.00632245
-GildedRoseTest.BackstagePass_SellIn5_IncreasesByThree 9 0.00551322
+ApprovalTest.PrintTextFixture 1 0
 ---
+ApprovalTest.PrintTextFixture
