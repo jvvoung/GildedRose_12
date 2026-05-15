@@ -25,11 +25,40 @@
 	ProcessorClockFrequency="3192.000000"
 	>
 	<Testing>
-		<StartDateTime>May 15 09:33 [NON-UTF-8-BYTE-0xB4][NON-UTF-8-BYTE-0xEB][NON-UTF-8-BYTE-0xC7]ѹα[NON-UTF-8-BYTE-0xB9] ǥ[NON-UTF-8-BYTE-0xC1]ؽ[NON-UTF-8-BYTE-0xC3]</StartDateTime>
-		<StartTestTime>1778805210</StartTestTime>
-		<TestList/>
-		<EndDateTime>May 15 09:33 [NON-UTF-8-BYTE-0xB4][NON-UTF-8-BYTE-0xEB][NON-UTF-8-BYTE-0xC7]ѹα[NON-UTF-8-BYTE-0xB9] ǥ[NON-UTF-8-BYTE-0xC1]ؽ[NON-UTF-8-BYTE-0xC3]</EndDateTime>
-		<EndTestTime>1778805210</EndTestTime>
+		<StartDateTime>May 15 09:36 [NON-UTF-8-BYTE-0xB4][NON-UTF-8-BYTE-0xEB][NON-UTF-8-BYTE-0xC7]ѹα[NON-UTF-8-BYTE-0xB9] ǥ[NON-UTF-8-BYTE-0xC1]ؽ[NON-UTF-8-BYTE-0xC3]</StartDateTime>
+		<StartTestTime>1778805375</StartTestTime>
+		<TestList>
+			<Test>./GildedRoseTest.TDD9_backstage</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>GildedRoseTest.TDD9_backstage</Name>
+			<Path>.</Path>
+			<FullName>./GildedRoseTest.TDD9_backstage</FullName>
+			<FullCommandLine>C:\DEV\GildedRose_12\build\gilded_rose_test.exe "--gtest_filter=GildedRoseTest.TDD9_backstage" "--gtest_also_run_disabled_tests"</FullCommandLine>
+			<StartTestTime>1778805375.131868</StartTestTime>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.021702</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>C:\DEV\GildedRose_12\build\gilded_rose_test.exe "--gtest_filter=GildedRoseTest.TDD9_backstage" "--gtest_also_run_disabled_tests"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNkE1rwzAMhu/+FTo2h5h1txV6GEvJodCNtNslDsFJ1GDm2MVWtr+/OCldMxitTvp4kN5XWW+MMi10UplFBEdnO3hZiWTzIVKlG2wy67FcPoqqH0pRNnjyorW21UjoKfauvirFWIasDAt5XbOdJVxBOiJwGCZwVJrQwRp+D4Q+PyTJU1nJ+tOTbJHl60sUkJ1lLoHGFUHmOfe9IuQsjy9RQKptJfU0R/OlnDUdmoFFivvTH/h651wSyyF738EYxS25Ewav21soLB6g89G9IiYcyJLUEbvPJ6F0cWO/zfyL/30PnDR8fmew8/a832+S4HxiOfsBwp6z8g==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>May 15 09:36 [NON-UTF-8-BYTE-0xB4][NON-UTF-8-BYTE-0xEB][NON-UTF-8-BYTE-0xC7]ѹα[NON-UTF-8-BYTE-0xB9] ǥ[NON-UTF-8-BYTE-0xC1]ؽ[NON-UTF-8-BYTE-0xC3]</EndDateTime>
+		<EndTestTime>1778805375</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

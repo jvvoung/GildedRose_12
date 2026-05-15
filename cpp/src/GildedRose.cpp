@@ -2,10 +2,24 @@
 
 #include "AgedBrieItem.h"
 #include "BackstagePassItem.h"
+#include "GildedRoseItem.h"
 #include "NormalItem.h"
 #include "SulfurasItem.h"
 
 GildedRose::GildedRose(std::vector<Item>& items) : items(items) {}
+
+std::unique_ptr<GildedRoseItem> GildedRose::createItem(Item& item) {
+    if (item.name == AGED_BRIE) {
+        return std::make_unique<AgedBrieItem>(item);
+    }
+    if (item.name == BACKSTAGE_PASS) {
+        return std::make_unique<BackstagePassItem>(item);
+    }
+    if (item.name == SULFURAS) {
+        return std::make_unique<SulfurasItem>(item);
+    }
+    return std::make_unique<NormalItem>(item);
+}
 
 void GildedRose::updateSellIn(Item& item) {
     if (item.name != SULFURAS) {
@@ -15,26 +29,11 @@ void GildedRose::updateSellIn(Item& item) {
 
 void GildedRose::updateQuality() {
     for (auto& item : items) {
-        if (item.name == AGED_BRIE) {
-            AgedBrieItem{item}.updateQuality();
-        } else if (item.name == BACKSTAGE_PASS) {
-            BackstagePassItem{item}.updateQuality();
-        } else if (item.name == SULFURAS) {
-            SulfurasItem{item}.updateQuality();
-        } else {
-            NormalItem{item}.updateQuality();
-        }
-
+        auto gildedItem = createItem(item);
+        gildedItem->updateQuality();
         updateSellIn(item);
-
         if (item.sellIn < 0) {
-            if (item.name == AGED_BRIE) {
-                AgedBrieItem{item}.updateExpired();
-            } else if (item.name == BACKSTAGE_PASS) {
-                BackstagePassItem{item}.updateExpired();
-            } else if (item.name != SULFURAS) {
-                NormalItem{item}.updateExpired();
-            }
+            gildedItem->updateExpired();
         }
     }
 }
