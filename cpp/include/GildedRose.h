@@ -20,4 +20,5 @@ private:
 
     std::unique_ptr<GildedRoseItem> createItem(Item& item);
     void updateSellIn(Item& item);
+    void updateItem(Item& item);
 };
