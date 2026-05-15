@@ -14,13 +14,6 @@ private:
     static constexpr const char* BACKSTAGE_PASS =
         "Backstage passes to a TAFKAL80ETC concert";
     static constexpr const char* SULFURAS = "Sulfuras, Hand of Ragnaros";
-    static constexpr int MIN_QUALITY = 0;
-    static constexpr int MAX_QUALITY = 50;
 
-    void updateAgedBrieBeforeSellIn(Item& item);
-    void updateBackstagePassBeforeSellIn(Item& item);
-    void updateSulfurasBeforeSellIn(Item& item);
-    void updateNormalItemBeforeSellIn(Item& item);
     void updateSellIn(Item& item);
-    void updateExpiredItem(Item& item);
 };

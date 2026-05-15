@@ -1,36 +1,11 @@
 #include "GildedRose.h"
 
+#include "AgedBrieItem.h"
+#include "BackstagePassItem.h"
+#include "NormalItem.h"
+#include "SulfurasItem.h"
+
 GildedRose::GildedRose(std::vector<Item>& items) : items(items) {}
-
-void GildedRose::updateAgedBrieBeforeSellIn(Item& item) {
-    if (item.quality < MAX_QUALITY) {
-        item.quality = item.quality + 1;
-    }
-}
-
-void GildedRose::updateBackstagePassBeforeSellIn(Item& item) {
-    if (item.quality < MAX_QUALITY) {
-        item.quality = item.quality + 1;
-    }
-    if (item.sellIn < 11) {
-        if (item.quality < MAX_QUALITY) {
-            item.quality = item.quality + 1;
-        }
-    }
-    if (item.sellIn < 6) {
-        if (item.quality < MAX_QUALITY) {
-            item.quality = item.quality + 1;
-        }
-    }
-}
-
-void GildedRose::updateSulfurasBeforeSellIn(Item&) {}
-
-void GildedRose::updateNormalItemBeforeSellIn(Item& item) {
-    if (item.quality > MIN_QUALITY) {
-        item.quality = item.quality - 1;
-    }
-}
 
 void GildedRose::updateSellIn(Item& item) {
     if (item.name != SULFURAS) {
@@ -38,36 +13,28 @@ void GildedRose::updateSellIn(Item& item) {
     }
 }
 
-void GildedRose::updateExpiredItem(Item& item) {
-    if (item.name == AGED_BRIE) {
-        if (item.quality < MAX_QUALITY) {
-            item.quality = item.quality + 1;
-        }
-    } else if (item.name == BACKSTAGE_PASS) {
-        item.quality = item.quality - item.quality;
-    } else if (item.name != SULFURAS && item.quality > MIN_QUALITY) {
-        item.quality = item.quality - 1;
-    }
-}
-
 void GildedRose::updateQuality() {
-    for (size_t i = 0; i < items.size(); i++) {
-        Item& item = items[i];
-
+    for (auto& item : items) {
         if (item.name == AGED_BRIE) {
-            updateAgedBrieBeforeSellIn(item);
+            AgedBrieItem{item}.updateQuality();
         } else if (item.name == BACKSTAGE_PASS) {
-            updateBackstagePassBeforeSellIn(item);
+            BackstagePassItem{item}.updateQuality();
         } else if (item.name == SULFURAS) {
-            updateSulfurasBeforeSellIn(item);
+            SulfurasItem{item}.updateQuality();
         } else {
-            updateNormalItemBeforeSellIn(item);
+            NormalItem{item}.updateQuality();
         }
 
         updateSellIn(item);
 
         if (item.sellIn < 0) {
-            updateExpiredItem(item);
+            if (item.name == AGED_BRIE) {
+                AgedBrieItem{item}.updateExpired();
+            } else if (item.name == BACKSTAGE_PASS) {
+                BackstagePassItem{item}.updateExpired();
+            } else if (item.name != SULFURAS) {
+                NormalItem{item}.updateExpired();
+            }
         }
     }
 }
