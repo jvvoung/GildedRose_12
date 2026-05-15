@@ -13,19 +13,24 @@ FetchContent_Declare(
     DOWNLOAD_EXTRACT_TIMESTAMP TRUE
     TLS_VERIFY OFF
 )
+
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
-# ApprovalTests.cpp
+# ApprovalTests
 FetchContent_Declare(
     ApprovalTests
     GIT_REPOSITORY https://github.com/approvals/ApprovalTests.cpp.git
     GIT_TAG v.10.13.0
 )
+
 FetchContent_MakeAvailable(ApprovalTests)
 
 # Library
-add_library(gilded_rose src/GildedRose.cpp)
+add_library(gilded_rose
+    src/GildedRose.cpp
+)
+
 target_include_directories(gilded_rose PUBLIC include)
 
 # Tests
@@ -33,6 +38,7 @@ enable_testing()
 
 add_executable(gilded_rose_test
     test/GildedRoseTest.cpp
+    test/FoodBeverageTest.cpp
     test/ApprovalTest.cpp
 )
 
@@ -44,7 +50,6 @@ target_link_libraries(gilded_rose_test
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
     target_compile_options(gilded_rose PRIVATE --coverage)
-    target_compile_options(gilded_rose_test PRIVATE --coverage)
     target_link_options(gilded_rose_test PRIVATE --coverage)
 endif()
 

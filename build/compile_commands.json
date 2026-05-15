@@ -7,13 +7,19 @@
 },
 {
   "directory": "C:/DEV/GildedRose_12/build",
-  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/gilded_rose_test.dir/includes_CXX.rsp -g -std=gnu++17 --coverage -o CMakeFiles\\gilded_rose_test.dir\\test\\GildedRoseTest.cpp.obj -c C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/gilded_rose_test.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\gilded_rose_test.dir\\test\\GildedRoseTest.cpp.obj -c C:\\DEV\\GildedRose_12\\cpp\\test\\GildedRoseTest.cpp",
   "file": "C:/DEV/GildedRose_12/cpp/test/GildedRoseTest.cpp",
   "output": "CMakeFiles/gilded_rose_test.dir/test/GildedRoseTest.cpp.obj"
 },
 {
   "directory": "C:/DEV/GildedRose_12/build",
-  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/gilded_rose_test.dir/includes_CXX.rsp -g -std=gnu++17 --coverage -o CMakeFiles\\gilded_rose_test.dir\\test\\ApprovalTest.cpp.obj -c C:\\DEV\\GildedRose_12\\cpp\\test\\ApprovalTest.cpp",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/gilded_rose_test.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\gilded_rose_test.dir\\test\\FoodBeverageTest.cpp.obj -c C:\\DEV\\GildedRose_12\\cpp\\test\\FoodBeverageTest.cpp",
+  "file": "C:/DEV/GildedRose_12/cpp/test/FoodBeverageTest.cpp",
+  "output": "CMakeFiles/gilded_rose_test.dir/test/FoodBeverageTest.cpp.obj"
+},
+{
+  "directory": "C:/DEV/GildedRose_12/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/gilded_rose_test.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\gilded_rose_test.dir\\test\\ApprovalTest.cpp.obj -c C:\\DEV\\GildedRose_12\\cpp\\test\\ApprovalTest.cpp",
   "file": "C:/DEV/GildedRose_12/cpp/test/ApprovalTest.cpp",
   "output": "CMakeFiles/gilded_rose_test.dir/test/ApprovalTest.cpp.obj"
 },

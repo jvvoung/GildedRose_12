@@ -2,6 +2,7 @@
 
 #include "AgedBrieItem.h"
 #include "BackstagePassItem.h"
+#include "FoodBeverageItem.h"
 #include "GildedRoseItem.h"
 #include "NormalItem.h"
 #include "SulfurasItem.h"
@@ -17,6 +18,9 @@ std::unique_ptr<GildedRoseItem> GildedRose::createItem(Item& item) {
     }
     if (item.name == SULFURAS) {
         return std::make_unique<SulfurasItem>(item);
+    }
+    if (item.name.find("[F&B]") != std::string::npos) {
+        return std::make_unique<FoodBeverageItem>(item);
     }
     return std::make_unique<NormalItem>(item);
 }

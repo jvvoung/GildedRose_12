@@ -1,5 +1,5 @@
 {
-  "tests": 17,
+  "tests": 20,
   "name": "AllTests",
   "testsuites": [
     {
@@ -10,6 +10,27 @@
           "name": "PrintTextFixture",
           "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\ApprovalTest.cpp",
           "line": 68
+        }
+      ]
+    },
+    {
+      "name": "FoodBeverageTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "DegradesTwiceAsNormal",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\FoodBeverageTest.cpp",
+          "line": 4
+        },
+        {
+          "name": "DegradesFourTimesAfterSellIn",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\FoodBeverageTest.cpp",
+          "line": 12
+        },
+        {
+          "name": "QualityNeverBelowZero",
+          "file": "C:\\DEV\\GildedRose_12\\cpp\\test\\FoodBeverageTest.cpp",
+          "line": 19
         }
       ]
     },
